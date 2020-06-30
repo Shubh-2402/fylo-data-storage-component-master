@@ -1,0 +1,164 @@
+body{
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}   
+div{
+    box-sizing: border-box; 
+    background-color: transparent;
+}  
+.left{
+    width: 300px;
+    height: 200px;
+    padding: 40px 20px;    
+    border-radius: 10px 75px 10px 10px;
+    margin: 20px auto;
+    background-color: hsl(228, 56%, 26%);
+    display:block;
+}
+.logo{
+    display: block;
+    margin-bottom: 40px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 10px auto;
+}
+ul li{
+    display: inline;
+    padding: 15px ;
+    background-color:  hsl(229, 57%, 11%);
+    border-radius: 10px;
+    margin-right: 10px;
+} 
+ul li img{
+    vertical-align: middle;
+}
+.right{
+    width: 300px;
+    height: 160px;   
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(228, 56%, 26%);   
+    display: block; 
+    margin: 0 auto;
+    color:  hsl(243, 100%, 93%);
+}
+.head{
+    text-align: center;
+}
+.right span{
+    font-weight: 700;
+}
+.progress-bar{
+    width: 100%;
+    height: 15px;
+    background-color:  hsl(229, 57%, 11%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2px 3px;
+}
+.progress{
+    margin: 0;
+    width: 80%;
+    height: 11px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right , hsl(6, 100%, 80%), hsl(335, 100%, 65%) );
+    position: relative;
+}
+.progress::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:  hsl(243, 100%, 93%);
+    position: absolute;
+    right: 0;
+}
+.p-left{
+    float: left;
+}
+.p-right{
+    float: right;
+}
+.details{
+    height: 40px;
+}
+.data{
+    width: 60%;
+    background-color: white;
+    color: hsl(229, 57%, 11%);
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.data h1{
+    font-size: 32px;
+    margin: 5px 0px;
+}
+.data span{
+    font-size: 14px;
+    line-height: 32px;
+    color:  hsl(229, 7%, 55%);
+}
+.outer{
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.mid{
+    display: inline-block;
+}
+
+
+
+@media only screen and (min-width:1000px){
+
+    body{
+        background-image: url(images/bg-desktop.png);
+        background-position: bottom;
+        background-size: 100vw;
+        background-color:  hsl(229, 57%, 11%);
+    }
+    .left{
+        display: inline-block;  
+        vertical-align: bottom;
+        margin: 0 20px;
+        width: 350px; 
+        padding: 40px;  
+    }
+    ul{
+        margin: 0px;
+        text-align: left;
+    }
+    .right{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 500px;
+        padding: 20px 40px;
+        position: relative;
+    }
+    .head{
+        text-align: left;
+    }
+    .mid{
+        margin-bottom:100px;
+    }
+    .data{
+        position: absolute;
+        width: 150px;
+        float: right;
+        right: 40px;
+        top: -85px;
+    }
+}
